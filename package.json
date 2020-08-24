@@ -1,5 +1,5 @@
 {
-  "name": "rustyBot",
+  "name": "rollBot",
   "version": "1.0.0",
   "description": "A simple Discord Bot made for a private server",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nathan-reitan/rustyBot.git"
+    "url": "git+https://github.com/Nathan-reitan/rollBot.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Nathan-reitan/rustyBot/issues"
+    "url": "https://github.com/Nathan-reitan/rollBot/issues"
   },
-  "homepage": "https://github.com/Nathan-reitan/rustyBot#readme",
+  "homepage": "https://github.com/Nathan-reitan/rollBot#readme",
   "dependencies": {
     "discord.js": "^12.2.0",
     "prism-media": "^1.2.2"
