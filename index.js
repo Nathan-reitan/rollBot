@@ -26,7 +26,7 @@ const helpEmbed = {
 }
 
 client.once('ready', () => {
-  console.log('rustyBot is squeazin that box');
+  console.log('rollBot is ready to keep rollin, rollin, rollin');
 });
 
 client.on('message', message => {
@@ -48,7 +48,6 @@ client.on('message', message => {
         total = total + working
 
         rollArray.push("Roll #" + a + ": " + working)
-
       }
     } else if (rolls > 5 && rolls < 500) {
       while (a < rolls) {
