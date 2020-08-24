@@ -18,7 +18,7 @@ const helpEmbed = {
 
 3. !fire, !ca, !iscaonfire, !iscaliforniaonfire?: will link you to iscaliforniaonfire.com;
 
-4. !teemo: gif of teemo dancing(special request of Kenzie);
+4. !teemo: gif of teemo dancing;
 
 5. !roll # #: will roll the amount of dice for the dice you choose (ie: !roll 5 6 will roll 5 6 sided dice);
 
