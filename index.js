@@ -97,9 +97,6 @@ client.on('message', message => {
       message.channel.send('Tails');
     }
   }
-  if (message.content === '!jobs' || message.content === '!steve' || message.content === '!stevejobs' || message.content === '!isstevejobsdead?') {
-      message.channel.send('Steve Jobs is dead.');
-    }
 
   if (message.content === '!fire' || message.content === '!ca' || message.content === '!iscaonfire' || message.content === '!iscaliforniaonfire?') {
       message.channel.send('http://iscaliforniaonfire.com/')
