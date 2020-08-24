@@ -13,15 +13,13 @@ const helpEmbed = {
   description: `
   1. !coinflip: will produce heads or tails;
 
-2. !jobs, !steve, !stevejobs, !isstevejobsdead?: will tell you if steve jobs is alive or not;
+2. !fire, !ca, !iscaonfire, !iscaliforniaonfire?: will link you to iscaliforniaonfire.com;
 
-3. !fire, !ca, !iscaonfire, !iscaliforniaonfire?: will link you to iscaliforniaonfire.com;
+3. !teemo: gif of teemo dancing;
 
-4. !teemo: gif of teemo dancing;
+4. !roll # #: will roll the amount of dice for the dice you choose (ie: !roll 5 6 will roll 5 6 sided dice);
 
-5. !roll # #: will roll the amount of dice for the dice you choose (ie: !roll 5 6 will roll 5 6 sided dice);
-
-6. !hehe: gif of dog moonwalking;
+5. !hehe: gif of dog moonwalking;
   `
 }
 
