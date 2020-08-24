@@ -32,6 +32,6 @@ npm install
 ```
 3. Setup an application and bot through the discord API by following the instructions in the link below:
 
-  https://discordpy.readthedocs.io/en/latest/discord.html
+* https://discordpy.readthedocs.io/en/latest/discord.html
 
 4. Start the node process.  Once the node process has started use the commands in a chat channel in the Discord server that you added the bot to.
