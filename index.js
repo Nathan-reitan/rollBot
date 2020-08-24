@@ -4,13 +4,12 @@ const client = new Discord.Client();
 const teemo = new Discord.MessageAttachment('./assets/teemo.gif');
 const hehe = new Discord.MessageAttachment('./assets/moonwalk.gif');
 
-
 const teemoEmbed = {
   title: 'Captain Teemo on duty!'
 };
 
 const helpEmbed = {
-  title: "Rusty's help desk",
+  title: "Welcome to the Help Desk",
   description: `
   1. !coinflip: will produce heads or tails;
 
