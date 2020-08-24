@@ -38,7 +38,7 @@ client.on('message', message => {
     let total = 0
     let working  = 0
     if (size>5000){
-      total = "Fuck you, stop putting in stupid numbers."
+      total = "Dice size must be below 5000"
       rollObj.total = total
       return rollObj
     }
@@ -58,7 +58,7 @@ client.on('message', message => {
         total = total + working
       }
     } else {
-      total = "Fuck you, stop putting in stupid numbers."
+      total = "Dice amount must be below 500"
     }
 
     rollObj.array = rollArray;
@@ -72,7 +72,7 @@ client.on('message', message => {
     let diceSize = parseInt(array[2])
     let diceNumber = parseInt(array[1])
     if (isNaN(diceSize) || isNaN(diceNumber)){
-      return message.channel.send("you must use numbers, you stupid idiot")
+      return message.channel.send("You must use numbers.")
     }
     let rollReturn = diceRoll(diceNumber, diceSize)
     let rollTotal = {
