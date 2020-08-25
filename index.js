@@ -1,9 +1,27 @@
 const Discord = require('discord.js');
 const config = require('./config.json');
-const embeds = require('./embeds.js');
 const client = new Discord.Client();
 const teemo = new Discord.MessageAttachment('./assets/teemo.gif');
 const hehe = new Discord.MessageAttachment('./assets/moonwalk.gif');
+
+const teemoEmbed = {
+  title: 'Captain Teemo on duty!'
+};
+
+const helpEmbed = {
+  title: "Welcome to the Help Desk",
+  description: `
+  1. !coinflip: will produce heads or tails;
+
+2. !fire, !ca, !iscaonfire, !iscaliforniaonfire?: will link you to iscaliforniaonfire.com;
+
+3. !teemo: gif of teemo dancing;
+
+4. !roll # #: will roll the amount of dice for the dice you choose (ie: !roll 5 6 will roll 5 6 sided dice);
+
+5. !hehe: gif of dog moonwalking;
+  `
+}
 
 client.once('ready', () => {
   console.log('rollBot is ready to keep rollin, rollin, rollin');
@@ -82,11 +100,11 @@ client.on('message', message => {
       message.channel.send('http://iscaliforniaonfire.com/')
     }
   if (message.content === '!teemo'){
-    message.channel.send({embed: embeds.teemoEmbed})
+    message.channel.send({embed: teemoEmbed})
     message.channel.send({files: [teemo]})
   }
   if (message.content === '!help'){
-    message.channel.send({embed: embeds.helpEmbed})
+    message.channel.send({embed: helpEmbed})
   }
 
   if (message.content ==='!hehe'){
