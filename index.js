@@ -43,8 +43,8 @@ client.on('message', message => {
     rollObj.total = total
 
     return rollObj
-
   }
+
   if (message.content.includes("!roll")){
     let array = message.content.split(" ")
     let diceSize = parseInt(array[2])
@@ -82,11 +82,11 @@ client.on('message', message => {
       message.channel.send('http://iscaliforniaonfire.com/')
     }
   if (message.content === '!teemo'){
-    message.channel.send({embed: teemoEmbed})
+    message.channel.send({embed: embeds.teemoEmbed})
     message.channel.send({files: [teemo]})
   }
   if (message.content === '!help'){
-    message.channel.send({embed: helpEmbed})
+    message.channel.send({embed: embeds.helpEmbed})
   }
 
   if (message.content ==='!hehe'){
