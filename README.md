@@ -30,7 +30,7 @@ cd rollBot
 ```shell
 npm install
 ```
-3. Setup an application and bot through the discord API by following the instructions in the link below:
+3. Setup an application and bot through the Discord API by following the instructions in the link below:
 
 * https://discordpy.readthedocs.io/en/latest/discord.html
 
