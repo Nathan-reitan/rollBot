@@ -76,12 +76,6 @@ client.on('message', message => {
         message.channel.send('Tails');
       }
       break;
-    case "!jobs":
-    case "!steve":
-    case "!stevejobs":
-    case "!isstevejobsdead?":
-      message.channel.send('Steve Jobs is dead.');
-      break;
     case "!fire":
     case "!ca":
     case "!iscaonfire":
