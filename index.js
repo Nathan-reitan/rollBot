@@ -63,6 +63,49 @@ client.on('message', message => {
     return rollObj
   }
 
+  function random() {
+    let number = Math.floor(Math.random() * 100)
+    return number;
+  }
+
+  switch (message.content) {
+    case "!coinflip":
+      if (random() >= 50) {
+        message.channel.send('Heads');
+      } else {
+        message.channel.send('Tails');
+      }
+      break;
+    case "!jobs":
+    case "!steve":
+    case "!stevejobs":
+    case "!isstevejobsdead?":
+      message.channel.send('Steve Jobs is dead.');
+      break;
+    case "!fire":
+    case "!ca":
+    case "!iscaonfire":
+    case "!iscaliforniaonfire?":
+      message.channel.send('http://iscaliforniaonfire.com/');
+      break;
+    case "!teemo":
+      message.channel.send({ embed: teemoEmbed })
+      message.channel.send({ files: [teemo] });
+      break;
+    case "!help":
+      message.channel.send({ embed: helpEmbed });
+      break;
+    case "!hehe":
+      message.channel.send({ files: [hehe] });
+      break;
+    case "!dmx":
+      if (random() > 50) {
+        message.channel.send({ files: [dmx] })
+      } else {
+        message.channel.send('http://isdmxinjail.com/')
+      }
+  }
+
   if (message.content.includes("!roll")){
     let array = message.content.split(" ")
     let diceSize = parseInt(array[2])
@@ -86,30 +129,5 @@ client.on('message', message => {
       message.channel.send({ embed: rollTotal })
     }
   }
-
-  if (message.content === '!coinflip'){
-    let fiftyfifty = Math.floor(Math.random() * 100)
-    if(fiftyfifty>=50){
-      message.channel.send('Heads');
-    } else {
-      message.channel.send('Tails');
-    }
-  }
-
-  if (message.content === '!fire' || message.content === '!ca' || message.content === '!iscaonfire' || message.content === '!iscaliforniaonfire?') {
-      message.channel.send('http://iscaliforniaonfire.com/')
-    }
-  if (message.content === '!teemo'){
-    message.channel.send({embed: teemoEmbed})
-    message.channel.send({files: [teemo]})
-  }
-  if (message.content === '!help'){
-    message.channel.send({embed: helpEmbed})
-  }
-
-  if (message.content ==='!hehe'){
-    message.channel.send({ files: [hehe] })
-  }
-});
 
 client.login(config.token);
