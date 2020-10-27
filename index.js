@@ -92,12 +92,6 @@ client.on('message', message => {
     case "!hehe":
       message.channel.send({ files: [hehe] });
       break;
-    case "!dmx":
-      if (random() > 50) {
-        message.channel.send({ files: [dmx] })
-      } else {
-        message.channel.send('http://isdmxinjail.com/')
-      }
   }
 
   if (message.content.includes("!roll")){
