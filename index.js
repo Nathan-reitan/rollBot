@@ -117,5 +117,6 @@ client.on('message', message => {
       message.channel.send({ embed: rollTotal })
     }
   }
+});
 
 client.login(config.token);
